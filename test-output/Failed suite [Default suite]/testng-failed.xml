@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.first.selenium.demo.WebElementColor">
+        <methods>
+          <include name="setUp"/>
+          <include name="elementcolor"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.WebElementColor -->
+      <class name="com.first.selenium.demo.AlerthandleTest">
+        <methods>
+          <include name="hightElement"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.AlerthandleTest -->
+      <class name="com.first.selenium.demo.WindowHandle">
+        <methods>
+          <include name="window"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.WindowHandle -->
+      <class name="com.first.selenium.demo.Explicitwait">
+        <methods>
+          <include name="explicitwait"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.Explicitwait -->
+      <class name="com.first.selenium.demo.MathmeticCaptcha">
+        <methods>
+          <include name="steup"/>
+          <include name="mathcaptcha"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.MathmeticCaptcha -->
+      <class name="com.first.selenium.demo.OBDXAPPLICATIONTEST">
+        <methods>
+          <include name="setUp"/>
+          <include name="uname_pass"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.OBDXAPPLICATIONTEST -->
+      <class name="com.first.selenium.demo.AutodinamicDropdown">
+        <methods>
+          <include name="dropdown"/>
+          <include name="steup"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.AutodinamicDropdown -->
+      <class name="com.first.selenium.demo.ScreenshotTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="dragdrop"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.ScreenshotTest -->
+      <class name="com.first.selenium.demo.DDTSQLtest">
+        <methods>
+          <include name="dragdrop"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.DDTSQLtest -->
+      <class name="com.first.selenium.demo.InvisibleDynamicDropdown">
+        <methods>
+          <include name="steup"/>
+          <include name="dropdown"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.InvisibleDynamicDropdown -->
+      <class name="com.first.selenium.demo.Numaricimagetypecaptcha">
+        <methods>
+          <include name="mathcaptcha"/>
+          <include name="steup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.first.selenium.demo.Numaricimagetypecaptcha -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->
