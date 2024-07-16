@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.first.selenium.demo.Practicedemo">
+      <class name="com.first.selenium.demo.Numaricimagetypecaptcha">
         <methods>
-          <include name="test"/>
-          <include name="setup"/>
+          <include name="mathcaptcha"/>
+          <include name="steup"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- com.first.selenium.demo.Practicedemo -->
+      </class> <!-- com.first.selenium.demo.Numaricimagetypecaptcha -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

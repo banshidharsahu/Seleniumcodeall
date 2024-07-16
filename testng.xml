@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- If want to provide same parameter value for all test case then write outside test tag other wise write in side 
+test tag if any specific -->
+
+  <test thread-count="5" name="Test">
+  <parameter name="i" value="8" />
+<parameter name="j" value="9"/>
+    <classes>
+     <!--   <class name="testNgselenium.dataprovideTest"/>-->
+      <class name="testNgselenium.ParametersTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

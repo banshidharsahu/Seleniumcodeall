@@ -12,7 +12,9 @@ public class Retry implements IRetryAnalyzer {
 		if (count < maxcount) {
 			count++;
 			return true;
-		} else {
+		}
+
+		else {
 			return false;
 		}
 

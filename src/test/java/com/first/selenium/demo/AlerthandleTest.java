@@ -16,7 +16,7 @@ public class AlerthandleTest {
 
 	@BeforeMethod
 	public static void setUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:/Seleniumtest/demo/Driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "‪C:/chromedriver-win64/chromedriver.exe");
 		/// below chromeOption step we used incase of test chrome used for automation testing scritpt
 		ChromeOptions option = new ChromeOptions();
 		option.setBinary("D:/Seleniumtest/demo/testChromeBrowser/chrome.exe");

@@ -30,8 +30,12 @@ public class WindowHandle {
 		System.out.println(parent);
 		driver.findElement(By.xpath("//button[@id='newWindowBtn']")).click();
 		Set<String> child = driver.getWindowHandles();
-		for (String childwindow : child) {
-			if (!childwindow.equals(parent)) {
+		for (String childwindow : child)
+
+		{
+			if (!childwindow.equals(parent))
+
+			{
 				/// here selenium driver swich to childwindow
 				driver.switchTo().window(childwindow);
 				Thread.sleep(1000);
@@ -53,7 +57,9 @@ public class WindowHandle {
 
 		Set<String> Tab = driver.getWindowHandles();
 		for (String childtab : Tab) {
-			if (!childtab.equals(parent)) {
+			if (!childtab.equals(parent))
+
+			{
 				driver.switchTo().window(childtab);
 				Thread.sleep(2000);
 

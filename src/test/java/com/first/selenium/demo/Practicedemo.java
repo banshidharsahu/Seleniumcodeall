@@ -1,9 +1,13 @@
 package com.first.selenium.demo;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -39,18 +43,31 @@ public class Practicedemo
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		// // Perform your Selenium tests
-		driver.get("https://www.example.com");
+		driver.get("https://money.rediff.com/indices");
 		// System.out.println("Title of the page: " + driver.getTitle());
 
 	}
 
 	@Test()
-	public void test()
+	public void test() throws InterruptedException
 
 	{
 
-		driver.switchTo().newWindow(WindowType.TAB);
-		driver.get("https://www.github.com");
+		driver.findElement(By.xpath("//a[@id='showMoreLess']")).click();
+		List<WebElement> list = driver.findElements(By.xpath("//table//tbody//tr/td[5]"));
+		List<Double> D = new LinkedList<Double>();
+		for (WebElement web : list)
+
+		{
+			String collon = web.getText();
+			double data = Double.parseDouble(collon);
+
+			D.add(data);
+
+		}
+		Collections.sort(D);
+		double ele = D.get(D.size() - 2);
+		System.out.println(ele);
 	}
 
 }

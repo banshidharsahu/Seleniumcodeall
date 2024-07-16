@@ -6,8 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class TestDemoforRetry
 
 {
@@ -30,7 +28,7 @@ public class TestDemoforRetry
 		/// Use WebDriverManager to manage ChromeDriver
 
 		// /// below is the automatic process for driver update
-		WebDriverManager.chromedriver().setup();
+		// WebDriverManager.chromedriver().setup();
 		//
 		// // Create a WebDriver instance for Chrome
 		driver = new ChromeDriver();
@@ -46,6 +44,7 @@ public class TestDemoforRetry
 
 	{
 		Assert.assertTrue(true);
+
 	}
 
 }

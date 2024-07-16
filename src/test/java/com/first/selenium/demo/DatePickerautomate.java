@@ -50,7 +50,9 @@ public class DatePickerautomate
 
 				{
 					String date = web.getText();
-					if (date.equals(expdate)) {
+					if (date.equals(expdate))
+
+					{
 						web.click();
 						break;
 					}
@@ -59,6 +61,7 @@ public class DatePickerautomate
 			}
 
 			else {
+				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[text()='Next']")).click();
 			}
 

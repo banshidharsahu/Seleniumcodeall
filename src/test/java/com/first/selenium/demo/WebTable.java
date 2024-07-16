@@ -62,7 +62,9 @@ public class WebTable
 		// System.out.println("Mininum character is: " + Collections.min(list, null));
 		// Get Max number of data in a dynanic column
 		// ===============================================
-		for (int i = 0; i < rows.size(); i++) {
+		for (int i = 0; i < rows.size(); i++)
+
+		{
 			max = driver.findElement(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[" + (i + 1) + "]/td[4]"))
 					.getText();
 			NumberFormat num = NumberFormat.getNumberInstance();

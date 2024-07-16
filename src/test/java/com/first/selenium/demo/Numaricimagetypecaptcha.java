@@ -16,7 +16,7 @@ public class Numaricimagetypecaptcha {
 
 	@BeforeMethod
 	public void steup() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "D:/chromedriver_win32/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "‪‪C:/chromedriver-win64/chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
